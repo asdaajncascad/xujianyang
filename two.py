@@ -37,3 +37,6 @@ selected_restaurant = st.selectbox("选择餐厅查看详情", df["餐厅名称"
 selected_df = df[df["餐厅名称"] == selected_restaurant]
 st.write(f"评分：{selected_df.iloc[0]['评分']}/5.0")
 st.write(f"价格：{selected_df.iloc[0]['价格（元）']}元")
+# 当前拥挤程度
+st.header（"当前拥挤程度"）
+st.progress(94)
